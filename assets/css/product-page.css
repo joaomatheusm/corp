@@ -1,0 +1,155 @@
+main {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#product {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    scroll-snap-align: center;
+    margin-top: 50px;
+}
+
+#product .img-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+#product .img-box .img-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#product .img-box .img-col img {
+    margin: 0 10px 10px 10px;
+}
+
+#product .product-info .container {
+    margin: 30px 0;
+}
+
+.container p {
+    margin: 8px 3px;
+}
+
+.radio {
+    display: none;
+}
+
+.label-color {
+    padding: 4px 5px;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    border: solid #a1a1a1 1px;
+}
+
+.label-size {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border: solid #a1a1a1 1px;
+    font-weight: 500;
+}
+
+.label-cream i {
+    color: #DCD8CC;
+}
+
+.label-gray i {
+    color: gray;
+}
+
+#cream:checked ~ .label-cream,
+#gray:checked ~ .label-gray,
+#rb-p:checked ~ .label-p,
+#rb-m:checked ~ .label-m,
+#rb-g:checked ~ .label-g
+{
+    border: solid black 1.9px;
+    transition: .5s;
+}
+
+/* Amount Button */
+
+#amount-container {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+}
+
+#amount-container span,
+#amount-container input {
+    background-color: #fff;
+    font-size: 0.9em;
+    padding: 8px;
+    border: none;
+}
+
+#amount-container input {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+#amount-container span {
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.buy-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buy-row #amount-container {
+    margin: 0 20px 0 5px;
+}
+
+.buy-row .buy-button {
+    width: 200px;
+    background: #1A1A1A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.delivery-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 5px;
+    border: solid #000 1px;
+    width: 319px;
+}
+
+.delivery-input-container #delivery-input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 75%;
+}
+
+.delivery-input-container #delivery-button {
+    border: none;
+    background: none;
+    margin-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delivery-row a {
+    font-size: 0.8em;
+    color: gray;
+    text-decoration: underline;
+    margin-left: 5px;
+}

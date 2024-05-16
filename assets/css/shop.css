@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    --color4: ;
+    --color5: ;
+    --color6: ;
+}
+
+::selection {
+    background: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body, header, nav, main, footer {
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+}
+
+body {
+    flex-wrap: wrap;
+    /* flex: 1 1 100vw;
+    width: 100%; */
+}
+
+main {
+    margin-top: 80px;
+    flex-direction: column;
+    background-color: #fff;
+    flex: 1 1 100vw; /* Cresce, encolhe e largura máxima de 500px */
+}
+
+main section {
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+main section#products {
+    padding: 0 0 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 98vw;
+}
+
+main section#products h2 {
+    margin: 20px;
+    font-size: 1.8em;
+    font-weight: 520;
+}
+
+main section#products .products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main section#products .products-container .product {
+    display: flex;
+    flex: 0 1 300px;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 25px;
+    cursor: pointer;
+    transition: .5s;
+    color: transparent;
+    font-size: .8em;
+    margin: 50px;
+}
+
+main section#products .products-container .product:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+main section#products a {
+    margin-top: 20px;
+    font-size: 0.8em !important;
+    font-weight: 500;
+    border: 1.9px solid #000;
+    padding: 11px 40px;
+    transition: .5s;
+}
+
+main section#products a:hover {
+    color: #575757;
+    border-color: #575757;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main section#products .products-container a {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1177px) {
+    main section#large-screen {
+        display: none;
+    }
+
+    main section#medium-screen {
+        display: flex;
+    }
+
+    main section#medium-screen img {
+        width: 49.6%;
+    }
+
+    main section#products .products-container .product {
+        color: black;
+    }
+}

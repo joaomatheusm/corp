@@ -1,0 +1,78 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 80px 0 80px;
+    flex: 1 1 100vw; /* Cresce, encolhe e largura máxima */
+    background-color: white;
+    z-index: 9999; /* Conserta o problema do transform no produto */
+}
+
+header #logo {
+    margin: 10px;
+    flex: 0 1 200px; /* Não cresce, encolhe e largura máxima de 200px */
+}
+
+#open-menu, #close-menu {
+    color: #000;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1 1 100vw; /* Cresce, encolhe e largura máxima */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a, nav button {
+    margin: 40px;
+    font-size: 1.3em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1177px) {
+    header {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 516px) {
+    #open-menu, #close-menu {
+        display: block;
+    }
+
+    #open-menu {
+        margin-left: auto;
+    }
+
+    #close-menu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+    
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
+        background: #a1a1a1;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+}

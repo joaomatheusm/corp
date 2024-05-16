@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/product-page.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Corp</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="assets/img/corp-logo.png" alt="" width="150px">
+            <!-- Diminuir o tamanho da imagem original depois -->
+        </a>
+
+        <button id="open-menu"><i class="fa-solid fa-bars"></i></button>
+
+        <nav id="menu">
+            <button id="close-menu">X</button>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="#">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="product">
+            <div class="img-box">
+                <div class="img-col">
+                    <img src="assets/img/camisa-exemplo-2.jpg" alt="" width="80px">
+                    <img src="assets/img/camisa-exemplo-2.jpg" alt="" width="80px">
+                </div>
+                <div class="main-img">
+                    <img src="assets/img/camisa-exemplo-2.jpg" alt="" width="400px">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 style="margin: 18px 0;">Camisa Corp Exemplo</h1>
+                <p>R$100,00 <span
+                        style="text-decoration: line-through; color: rgb(145, 145, 145); margin-left: 5px;">R$149,00</span>
+                </p>
+                <div class="color-container container">
+                    <p id="color-p">Cor: Creme</p>
+                    <form action="">
+                        <input type="radio" name="color" id="cream" value="Creme" class="radio" checked>
+                        <label class="label-color label-cream" for="cream"><i class="fa-solid fa-square-full"></i></label>
+                        <input type="radio" name="color" id="gray" value="Chumbo" class="radio">
+                        <label class="label-color label-gray" for="gray"><i class="fa-solid fa-square-full"></i></label>
+                    </form>
+                </div>
+                <div class="size-container container">
+                    <p id="size-p">Tamanho: P</p>
+                    <form action="">
+                        <input type="radio" name="size" id="rb-p" value="P" class="radio" checked>
+                        <label class="label-size label-p" for="rb-p"><span>P</span></label>
+                        <input type="radio" name="size" id="rb-m" value="M" class="radio">
+                        <label class="label-size label-m" for="rb-m"><span>M</span></label>
+                        <input type="radio" name="size" id="rb-g" value="G" class="radio">
+                        <label class="label-size label-g" for="rb-g"><span>G</span></label>
+                    </form>
+                </div>
+                <div class="buy-row">
+                    <div id="amount-container">
+                        <span class="minus">&minus;</span>
+                        <input type="text" class="value" value="1">
+                        <span class="add">&plus;</span>
+                    </div>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="delivery-row">
+                    <div class="delivery-input-container">
+                        <input type="text" id="delivery-input" placeholder="Seu CEP">
+                        <button id="delivery-button">Calcular</button>
+                    </div>
+                    <a href="">Não sei meu CEP</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="wrap-store-data">
+                <p>CORP_0RATION © 2024.</p>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>Rio de Janeiro - RJ.</p>
+            </div>
+            <div class="wrap-logo">
+                <img src="assets/img/corp-logo.png" alt="" width="200px"><br> <!-- Diminuir o tamanho original -->
+                <a href="https://www.instagram.com/corp_0ration/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="wrap-support">
+                <a href="#">Atendimento</a>
+                <a href="#">mthJ - Freelance</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/product-page.js"></script>
+</body>
+
+</html>
