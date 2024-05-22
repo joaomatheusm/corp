@@ -32,6 +32,19 @@ nav {
     justify-content: flex-end;
 }
 
+nav input {
+    background: #d1d1d1;
+    border: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 3px;
+    display: none;
+}
+
+nav button {
+    margin-left: 20px !important;
+}
+
 nav a, nav button {
     margin: 40px;
     font-size: 1.3em;
@@ -74,5 +87,10 @@ nav a, nav button {
         display: none;
         opacity: 0;
         transition: 0.3s;
+    }
+
+    nav button {
+        color: #fff;
+        margin: 40px !important;
     }
 }
