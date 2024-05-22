@@ -158,3 +158,12 @@ main {
     text-decoration: underline;
     margin-left: 5px;
 }
+
+@media only screen and (max-width: 870px) {
+    #product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}

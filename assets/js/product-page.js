@@ -35,14 +35,27 @@ add.addEventListener('click', () => input.value++);
 
 const imgColCream = [...document.querySelector('.cream .img-col').children];
 const imgColGray = [...document.querySelector('.gray .img-col').children];
-const mainImg = document.querySelector('.main-img').firstChild.nextSibling;
+const creamMainImg = document.querySelector('.main-img-cream').firstChild.nextSibling;
+const grayMainImg = document.querySelector('.main-img-gray').firstChild.nextSibling;
+
+function changeMainImg(evt) {
+    if (evt.target.parentNode.classList.contains('cream')) {
+        creamMainImg.src = evt.target.src;
+    } else {
+        grayMainImg.src = evt.target.src;
+    }
+}
+
+function removeAllSelected() {
+    imgColCream.forEach(e => e.classList.remove('selected'));
+    imgColGray.forEach(e => e.classList.remove('selected'));
+}
 
 function changeSelectedImg(evt) {
     if (evt.target.className !== 'selected') {
-        imgColCream.forEach((e) => e.classList.remove('selected'));
+        removeAllSelected();
         evt.target.classList.add('selected');
-
-        mainImg.src = evt.target.src;
+        changeMainImg(evt);
     }
 }
 
@@ -60,12 +73,20 @@ const creamBox = document.querySelector('.cream');
 const grayBox = document.querySelector('.gray');
 
 function changeColorDisplay(evt) {
+    removeAllSelected();
+
     if(evt.target.classList.contains('label-cream') || evt.target.parentNode.classList.contains('label-cream')) {
+        creamMainImg.src = imgColCream[0].src;
+        imgColCream[0].classList.add('selected');
+        
         creamBox.style.display = 'flex';
         grayBox.style.display = 'none';
     }
-
+    
     if(evt.target.classList.contains('label-gray') || evt.target.parentNode.classList.contains('label-gray')) {
+        grayMainImg.src = imgColGray[0].src;
+        imgColGray[0].classList.add('selected');
+
         creamBox.style.display = 'none';
         grayBox.style.display = 'flex';
     }
