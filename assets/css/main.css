@@ -33,15 +33,13 @@ html {
 
 body {
     flex-wrap: wrap;
-    /* flex: 1 1 100vw;
-    width: 100%; */
 }
 
 main {
     margin-top: 80px;
     flex-direction: column;
     background-color: #fff;
-    flex: 1 1 100vw; /* Cresce, encolhe e largura máxima de 500px */
+    flex: 1 1 100vw;
 }
 
 main section {
@@ -84,7 +82,6 @@ main section.gallery {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-height: calc(100vh - 80px); */
     scroll-snap-align: center;
     min-height: 100vh;
 }
