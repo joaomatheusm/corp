@@ -11,6 +11,7 @@ main {
     justify-content: center;
     scroll-snap-align: center;
     margin-top: 50px;
+    width: 90%;
 }
 
 #product .img-box {
@@ -23,6 +24,8 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+
 
 #product .img-box .img-col img {
     margin: 0 10px 10px 10px;
@@ -165,5 +168,20 @@ main {
         justify-content: center;
         align-items: center;
         margin-bottom: 100px;
+    }
+}
+    
+@media only screen and (max-width: 530px) {
+    #product .img-box {
+        flex-direction: column;
+    }
+
+    #product .img-box .img-col {
+        flex-direction: row;
+    }
+
+    #product .img-box .main-img-cream img,
+    #product .img-box .main-img-gray img {
+        width: 100%;
     }
 }

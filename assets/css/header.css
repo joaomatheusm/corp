@@ -41,10 +41,6 @@ nav input {
     display: none;
 }
 
-nav button {
-    margin-left: 20px !important;
-}
-
 nav a, nav button {
     margin: 40px;
     font-size: 1.3em;

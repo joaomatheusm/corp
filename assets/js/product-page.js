@@ -26,7 +26,7 @@ let add = document.querySelector('.add');
 let input = document.querySelector('.value');
 
 minus.addEventListener('click', () => {
-    if(input.value > 1) {
+    if (input.value > 1) {
         input.value--;
     }
 });
@@ -75,15 +75,15 @@ const grayBox = document.querySelector('.gray');
 function changeColorDisplay(evt) {
     removeAllSelected();
 
-    if(evt.target.classList.contains('label-cream') || evt.target.parentNode.classList.contains('label-cream')) {
+    if (evt.target.classList.contains('label-cream') || evt.target.parentNode.classList.contains('label-cream')) {
         creamMainImg.src = imgColCream[0].src;
         imgColCream[0].classList.add('selected');
-        
+
         creamBox.style.display = 'flex';
         grayBox.style.display = 'none';
     }
-    
-    if(evt.target.classList.contains('label-gray') || evt.target.parentNode.classList.contains('label-gray')) {
+
+    if (evt.target.classList.contains('label-gray') || evt.target.parentNode.classList.contains('label-gray')) {
         grayMainImg.src = imgColGray[0].src;
         imgColGray[0].classList.add('selected');
 
