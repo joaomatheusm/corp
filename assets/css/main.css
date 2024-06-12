@@ -189,6 +189,10 @@ a {
 }
 
 @media only screen and (max-width: 747px) {
+    main section#banner {
+        background-image: url(../img/back-black-edit-mediuml.jpg);
+    }
+
     main section#highlights {
         height: calc(100vh + 990px);
     }
@@ -205,5 +209,11 @@ a {
     
     main section#small-screen img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    main section#banner {
+        background-image: url(../img/back-black-edit-small.jpg);
     }
 }
