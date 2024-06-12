@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/side-cart.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,6 +18,27 @@
 
 <body>
     <header>
+        <div class="backdrop"></div>
+        <div id="sidecart" class="sidecart">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <img src="#" alt="" style="width: 30px;">
+                    <div class="header-title">
+                        <h2>Seu carrinho</h2>
+                    </div>
+                    <span id="close-btn" class="close-btn">X</span>
+                </div>
+                <div class="cart-items"></div>
+                <!-- Cart Actions -->
+                <div class="cart-actions">
+                    <div class="subtotal">
+                        <p>Subtotal:</p>
+                        <p>R$<span id="subtotal-price"></span></p>
+                    </div>
+                    <button>Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
         <a href="index.html" id="logo">
             <img src="assets/img/corp-logo.png" alt="" width="150px">
             <!-- Diminuir o tamanho da imagem original depois -->
@@ -32,9 +54,9 @@
             <a href="#">
                 <i class="fa-regular fa-user"></i>
             </a>
-            <a href="#">
+            <button id="open-cart-btn">
                 <i class="fa-solid fa-cart-shopping"></i>
-            </a>
+            </button>
         </nav>
     </header>
     <main>
@@ -167,6 +189,7 @@
         </div>
     </footer>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/side-cart.js"></script>
 </body>
 
 </html>
