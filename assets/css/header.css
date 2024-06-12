@@ -75,7 +75,6 @@ nav a, nav button {
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        color: #fff;
         background: #a1a1a1;
         align-items: center;
         justify-content: center;
@@ -86,7 +85,6 @@ nav a, nav button {
     }
 
     nav button {
-        color: #fff;
         margin: 40px !important;
     }
 }
